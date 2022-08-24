@@ -1,40 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>reveal.js</title>
-
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<head>
+	<meta charset="utf-8" />
+	<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+	/>
+	<title>Angular</title>
+	<link rel="stylesheet" href="dist/reset.css" />
+	<link rel="stylesheet" href="dist/reveal.css" />
+	<link rel="stylesheet" href="dist/theme/black.css" />
+	<link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
+	<link
+			rel="stylesheet"
+			href="/node_modules/reveal.js/dist/theme/black.css"
+	/>
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
+		<section class="name">Angular. First step</section>
+		<section>What is "Angular"?</section>
+		<section>
+			<ul>
+				<li class="fragment">A component-based</li>
+				<li class="fragment">A collection libraries</li>
+				<li class="fragment">A suite of developer tools</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Getting started</h2>
+			<p>Installed Node.js server</p>
+		</section>
+		<section>
+			<p>Angular CLI</p>
+			<pre><code data-trim data-noescape>
+            npm i @angular/cli -g
+            </code></pre>
+		</section>
+		<section>
+			<section>
+				Angular CLI allows you to easily perform the following tasks:
+			</section>
+			<section>
+				<ul>
+					<li class="fragment">ng build</li>
+					<li class="fragment">ng serve</li>
+					<li class="fragment">ng generate</li>
+					<li class="fragment">ng test</li>
+					<li class="fragment">ng e2e</li>
+				</ul>
+			</section>
+		</section>
+		<section>
+          <pre><code data-trim data-noescape>
+            ng new firstapp
+          </code></pre>
+		</section>
+		<section>
+			<ul>
+				<li class="fragment">style</li>
+				<li class="fragment">routing</li>
+				<li class="fragment">inline-style</li>
+				<li class="fragment">inline-template</li>
+			</ul>
+		</section>
+		<section>
+          <pre><code data-trim data-noescape>
+          ng serve
+          </code></pre>
+		</section>
+		<section>
+          <pre><code data-trim data-noescape>
+            ng serve --port 7000 --host x.x.x.x
+          </code></pre></section>
+		<section>
+			<pre><code data-trim data-noescape>
+            ng generate component myComponent --prefix --flat
+          </code></pre>
+		</section>
+		<section>
+			<pre><code data-trim data-noescape>
+            ng generate component myComponent
+          </code></pre>
+		</section>
+		<section>class, enum, interface, component, directive, pipe, service, guard, module, application, library, universal.</section>
+		<section>Structure</section>
+		<section>Module</section>
+		<section>
+			<ul>
+				<li class="fragment">component</li>
+				<li class="fragment">service</li>
+				<li class="fragment">directive</li>
+			</ul>
+		</section>
+		<section>@NgModule()</section>
+		<section>
+			<ul>
+				<li class="fragment">declarations</li>
+				<li class="fragment">exports</li>
+				<li class="fragment">imports</li>
+				<li class="fragment">providers</li>
+				<li class="fragment">bootstrap</li>
+			</ul>
+		</section>
+		<section>Thank you for your attention</section>
+	</div>
+</div>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+	// More info about initialization & config:
+	// - https://revealjs.com/initialization/
+	// - https://revealjs.com/config/
+	Reveal.initialize({
+		hash: true,
+		// Learn about plugins: https://revealjs.com/plugins/
+		plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+	});
+</script>
+</body>
 </html>
